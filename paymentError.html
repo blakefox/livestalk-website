@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Livestalk</title>
+    <link rel="icon" href="/favicon.ico"><link rel="shortcut icon" href="/favicon.ico">
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <a href="https://www.livestalk.org"><img src="images/livestalkRed.png" alt="Error" style="height: 40%; width: 40%; max-width: 200px; padding: 10px;"></a>
+    <img src="images/error.png" alt="Checkmark" style="height: 30%; width: 30%; max-width: 150px; display: block; margin-left: auto; margin-right: auto;">
+    <h2 style="color: #770202; text-align: center; font-weight: 900;">There was an Processing Error</h2>
+    <br><br>
+    <p style="text-align: center;"><a href="app" class="btn btn-outline-primary py-3 px-5" style="border: 3px solid">Back to Livestalk</a></p>
+    <footer class="footer-section bg-light" style="padding: 2em 0;">
+      <div class="container">
+        <h3>Subscribe</h3>
+        <p>Stay up to date on our Livestock Management Products</p>
+        <form method="post" id="subscribe">
+          <div class="d-flex mb-5">
+            <input type="text" class="form-control rounded-0" placeholder="Email" name="email" required>
+            <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+          </div>
+        </form>
+        <div>
+          <div class="border-top pt-5">
+            <p style="text-align: center;">
+              Copyright Livestalk &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+    
+  <script>
+
+    document.getElementById( "subscribe" ).addEventListener( "submit", function ( event ) {
+      //event.preventDefault();
+      $.post( "http://www.livestalk.org:1000/subscribe", $("#subscribe").serialize(), function(response){
+        
+      },'json');
+    });
+
+  </script>
+  
+  </body>
+</html>

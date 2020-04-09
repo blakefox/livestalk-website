@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /paymentError.html
+Disallow: /paymentSuccess.html
+Disallow: /paymentGateway.html

@@ -465,8 +465,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
             <h2 class="section-title mb-3 text-center text-white mx-auto">Choose Your Plan</h2>
-            <p class="mb-5 section-desc">We have plans designed for every type of Livestock Operation.</p>
-          
+            <p class="section-desc">We have plans designed for every type of Livestock Operation.</p>
+            <h3 style="color:white;">7 day Free Trial on Paying Plans!</h3>
           </div>
         </div>
       </div>
@@ -636,7 +636,7 @@
 
           <div class="col-md-4">
             <h3>Subscribe</h3>
-            <p>Keep up to date on our products by Subscribing to our mailing list.</p>
+            <p>Stay up to date on our Livestock Management Products</p>
             <form method="post" id="subscribe">
               <div class="d-flex mb-5">
                 <input type="text" class="form-control rounded-0" placeholder="Email" name="email" required>
@@ -646,25 +646,17 @@
           </div>
 
         </div>
-
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright Livestalk &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            
+                Copyright Livestalk &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+              </p>
             </div>
-          </div>
-          
+          </div> 
         </div>
       </div>
     </footer>
-
-  
-    
   </div> <!-- .site-wrap -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -684,14 +676,14 @@
 
     document.getElementById( "subscribe" ).addEventListener( "submit", function ( event ) {
       //event.preventDefault();
-      $.post( "http://www.livestalk.org:1000/subscribe", $("#subscribe").serialize(), function(response){
+      $.post( "https://www.livestalk.org:1001/subscribe", $("#subscribe").serialize(), function(response){
         
       },'json');
     });
 
     document.getElementById( "contactUs" ).addEventListener( "submit", function ( event ) {
       //event.preventDefault();
-      $.post( "http://www.livestalk.org:1000/contactUs", $("#contactUs").serialize(), function(response){
+      $.post( "https://www.livestalk.org:1001/contactUs", $("#contactUs").serialize(), function(response){
         
       },'json');
     });
