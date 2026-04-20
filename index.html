@@ -676,16 +676,16 @@
 
     document.getElementById( "subscribe" ).addEventListener( "submit", function ( event ) {
       //event.preventDefault();
-      $.post( "https://www.livestalk.org:1001/subscribe", $("#subscribe").serialize(), function(response){
+      $.post( "https://www.livestalk.org/subscribe", $("#subscribe").serialize(), function(response){
         
       },'json');
     });
 
     document.getElementById( "contactUs" ).addEventListener( "submit", function ( event ) {
       //event.preventDefault();
-      $.post( "https://www.livestalk.org:1001/contactUs", $("#contactUs").serialize(), function(response){
+      $.post( "https://www.livestalk.org/contactUs", $("#contactUs").serialize(), function(response){
         
-      },'json');
+      },'json');cd 
     });
 
   </script>
